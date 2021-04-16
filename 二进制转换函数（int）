@@ -1,0 +1,18 @@
+#include<iostream>
+//二进制转换器，使用pow函数...
+int func(int a){
+    int sum=0;
+    for(int i=0;a;i++){
+       int b=a%10;
+       sum += b * pow(2, i);
+		a = a / 10;
+	}
+	return sum;
+}
+//二进制转换函数到此结束...
+int main() {
+	int x = 0;
+	std::cin >> x;
+	std::cout << func(x) << std::endl;
+	return 0;
+}
