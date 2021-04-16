@@ -1,5 +1,5 @@
 #include<iostream>
-//排列组合函数
+//排列组合函数...
 int function(int x,int y){
 if(y==0){
 return 1;
@@ -18,5 +18,5 @@ y--;
 }
 return m/n;
 }
-//排列组合函数结束
+//排列组合函数结束...
 int main(){...}
