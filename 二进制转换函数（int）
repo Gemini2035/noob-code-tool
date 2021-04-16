@@ -10,9 +10,4 @@ int func(int a){
 	return sum;
 }
 //二进制转换函数到此结束...
-int main() {
-	int x = 0;
-	std::cin >> x;
-	std::cout << func(x) << std::endl;
-	return 0;
-}
+int main() {...}
