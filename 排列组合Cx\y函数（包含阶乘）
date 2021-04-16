@@ -1,0 +1,22 @@
+#include<iostream>
+//排列组合函数
+int function(int x,int y){
+if(y==0){
+return 1;
+}
+if(y<0){
+return 0;
+}
+int m=1,n=1,z=x-y+1;
+while(x>=z){
+m*=x;
+x--;
+}
+while(y>0){
+n*=y;
+y--;
+}
+return m/n;
+}
+//排列组合函数结束
+int main(){...}
