@@ -1,3 +1,5 @@
+#include<iostream>
+\\快速排序功能函数
 int getStandard(int array[], int i, int j) {
     int key = array[i];
     while (i < j) {
@@ -17,6 +19,7 @@ int getStandard(int array[], int i, int j) {
     array[i] = key;
     return i;
 }
+ \\利用标准值（自规定）进行一次排序
 void QuickSort(int array[], int low, int high) {
     if (low < high) {
         int standard = getStandard(array, low, high);
@@ -24,4 +27,6 @@ void QuickSort(int array[], int low, int high) {
         QuickSort(array, standard + 1, high);
     }
 }
+\\通过递归对整个数组排序，快速排序功能函数结束
+\\更多情况下直接使用<algorithm>中的sort函数
 int mian(){...}
